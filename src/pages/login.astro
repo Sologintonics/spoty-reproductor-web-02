@@ -1,0 +1,12 @@
+---
+import Layout from "@layouts/Layout.astro";
+import SpotifyLoginSection from "@components/login/SpotifyLoginSection.astro";
+
+const from = Astro.url.searchParams.get("from")!;
+---
+
+<Layout>
+  <main>
+    <SpotifyLoginSection state={from} />
+  </main>
+</Layout>

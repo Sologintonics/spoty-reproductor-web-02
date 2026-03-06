@@ -1,0 +1,56 @@
+---
+
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="preload" href="/fonts/neon-spark/Neon Spark.otf" as="font" crossorigin>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pachehitster</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family:
+			"Inter",
+			-apple-system,
+			BlinkMacSystemFont,
+			sans-serif;
+		background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%);
+		min-height: 100dvh;
+		height: 100%;
+		color: #fff;
+	}
+
+	main {
+		min-height: 100dvh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	@font-face {
+		font-family: "Neon Spark";
+		src: url("/fonts/neon-spark/Neon Spark.otf") format("opentype");
+		font-weight: normal;
+		font-style: normal;
+		font-display: block;
+	}
+
+	.screen {
+		width: 100%;
+		max-width: 400px;
+		padding: 2rem;
+	}
+</style>
